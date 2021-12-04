@@ -1,5 +1,5 @@
 # 🦮 My Uno Guide Dog
 
-This is the team project of Soongsil Univ. "창의적공학설계"
+It is a team project of Soongsil Univ. "창의적공학설계" lecture.
 
-## Team : `sna0e`, `AAminha`, ``
+#### Team Member : `sna0e`, `AAminha`, ``
