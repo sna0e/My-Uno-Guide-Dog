@@ -1,3 +1,5 @@
+# 메가랑 제대로 연결이 되지 않아 해당 코드가 작동하는지 확인 못해봄...
+
 const byte s0_pin = 8;
 const byte s1_pin = 44;
 const byte s2_pin = 45;
