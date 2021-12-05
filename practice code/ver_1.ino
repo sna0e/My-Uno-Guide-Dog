@@ -26,25 +26,25 @@ void printDetail(uint8_t type, int value);
 
 void Run(){
   
-if(digitalRead(leftLineSensor)==LOW)&&digitalRead(rightSensor)==HIGH)){ //RIGHT
+if(digitalRead(leftLineSensor)==LOW&&digitalRead(rightSensor)==HIGH){ //RIGHT
     digitalWrite(IN1, speed);
     digitalWrite(IN2, 0);
     digitalWrite(IN3, 0);
     digitalWrite(IN4, 0);
    }
-   else if(digitalRead(leftLineSensor)==HIGH)&&digitalRead(rightSensor)==LOW)){ //LEFT
+   else if(digitalRead(leftLineSensor)==HIGH&&digitalRead(rightSensor)==LOW){ //LEFT
     digitalWrite(IN1, 0);
     digitalWrite(IN2, 0);
     digitalWrite(IN3, speed);
     digitalWrite(IN4, 0);
    }
-   else if(digitalRead(leftLineSensor)==HIGH)&&digitalRead(rightSensor)==HIGH)){ //FORWARD
+   else if(digitalRead(leftLineSensor)==HIGH&&digitalRead(rightSensor)==HIGH){ //FORWARD
     digitalWrite(IN1, speed);
     digitalWrite(IN2, 0);
     digitalWrite(IN3, speed);
     digitalWrite(IN4, 0);
    }
-   else if(digitalRead(leftLineSensor)==LOW)&&digitalRead(rightSensor)==LOW)){ //STOP
+   else if(digitalRead(leftLineSensor)==LOW&&digitalRead(rightSensor)==LOW){ //STOP
     digitalWrite(IN1, 0);
     digitalWrite(IN2, 0);
     digitalWrite(IN3, 0);
@@ -165,7 +165,7 @@ void loop() {
   RED_Color=constrain(RED_Color, 255, 0);
 
   digitalWrite(s2_pin, HIGH);
-  digitalWrite(s3_pin, HIGH);]
+  digitalWrite(s3_pin, HIGH);
   int GREEN_Color=pulseIn(out_pin, LOW);
   GREEN_Color=map(GREEN_Color, 90,30, 0, 255);
   GREEN_Color=constrain(GREEN_Color, 255, 0);
